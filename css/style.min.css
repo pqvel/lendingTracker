@@ -1,7 +1,7 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 @font-face {
     font-family: Montserrat;
-    src: url(../fonts/montserrat/Montserrat-SemiBold.eot);
+    src: url(../fonts/montserrat/Montserrat-SemiBold.eof);
     src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url(../fonts/montserrat/Montserrat-SemiBold.eot) format("embedded-opentype"), url(../fonts/montserrat/Montserrat-SemiBold.woff) format("woff"),
         url(../fonts/montserrat/Montserrat-SemiBold.ttf) format("truetype");
     font-weight: 600;
@@ -50,8 +50,9 @@
 @font-face {
     font-family: "Permanent Marker";
     src: url(../fonts/permanentMarker/PermanentMarker-Regular.eot);
-    src: local("Permanent Marker Regular"), local("PermanentMarker-Regular"), url(../fonts/permanentMarker/PermanentMarker-Regular.eot) format("embedded-opentype"), url(../fonts/permanentMarker/PermanentMarker-Regular.woff2) format("woff2"),
-        url(../fonts/permanentMarker/PermanentMarker-Regular.woff) format("woff"), url(../fonts/permanentMarker/PermanentMarker-Regular.ttf) format("truetype");
+    src: local("Permanent Marker Regular"), local("PermanentMarker-Regular"), url(../fonts/permanentMarker/PermanentMarker-Regular.eot) format("embedded-opentype"),
+        url(../fonts/permanentMarker/PermanentMarker-Regular.woff2) format("woff2"), url(../fonts/permanentMarker/PermanentMarker-Regular.woff) format("woff"),
+        url(../fonts/permanentMarker/PermanentMarker-Regular.ttf) format("truetype");
     font-weight: 400;
     font-style: normal;
 } /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -378,11 +379,6 @@ ul {
         padding: 9px 17px;
     }
 }
-@media (max-width: 760px) {
-    .btn::after {
-        content: none;
-    }
-}
 .container {
     padding: 0 12%;
     width: 100%;
@@ -479,23 +475,28 @@ ul {
     height: 181px;
 }
 .slider__row {
-    position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: absolute;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
     top: 0;
-    gap: 30px;
-    width: 4410px;
-    left: -50%;
+    left: 0;
 }
 .slider__item {
     background-color: #fa6648;
-    border: 2px solid #1c1c1d;
+    border: 2px solid #08080a;
     border-bottom: 6px solid #1c1c1d;
     border-radius: 10px;
     padding: 25px 20px 30px;
-    max-width: 340px;
+    min-width: 340px;
     max-height: 181px;
+    margin-right: 30px;
+}
+.slider__item:last-child {
+    margin-right: 0;
 }
 .slider__item:nth-child(3n + 1) {
     background-color: #ffbd12;
@@ -663,6 +664,21 @@ ul {
     padding-left: 47px;
     cursor: pointer;
 }
+.authorization__label--active::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-color: #ffbd12;
+    border: 2px solid #1c1c1d;
+    border-radius: 8px;
+    left: 0;
+    top: -3px;
+    background-image: url(../img/icons/checked.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .authorization__label::before {
     position: absolute;
     content: "";
@@ -674,16 +690,6 @@ ul {
     border-radius: 8px;
     left: 0;
     top: -3px;
-    -webkit-transition: 0.25s;
-    -o-transition: 0.25s;
-    transition: 0.25s;
-    background-image: url(../img/icons/checked.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.authorization__label:hover::before {
-    background-color: #f72d2d;
-    border: 2px solid #000;
 }
 .authorization__button {
     display: -webkit-box;
@@ -1074,6 +1080,11 @@ ul {
     right: 0;
     z-index: 10;
 }
+.navigation--active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
 .navigation__list {
     list-style: none;
     padding: 0;
@@ -1463,13 +1474,11 @@ ul {
     bottom: 40px;
     left: 30px;
 }
-.tarif-plan__months {
+.tarif-plan__months,
+.tarif-plan__year {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 30px;
-}
-.tarif-plan__year {
-    display: none;
 }
 @media (max-width: 500px) {
     .tarif-plan__item {
@@ -1629,4 +1638,4 @@ ul {
         padding-top: 0;
     }
 }
-/*# sourceMappingURL=../sourcemaps/style.min.css.map */
+/*# sourceMappingURL=../sourcemaps/style.min.css.map *//*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
