@@ -6,426 +6,401 @@
 	<meta name="viewport"
 				content="width=device-width, initial-scale=1.0">
 	<meta name="description"
-				content="The bset Fitness tracker wwhat do you need!">
+				content="fitness tracker">
 	<meta name="keywords"
-				content="Fitness tracker, fitness, tracker, sport, clock, watch">
-	<link rel="shortcut icon"
-				href="img/favicons/favicon.svg"
-				type="image/svg+xml">
-	<link rel="shortcut icon"
-				href="img/favicons/favicon.webp"
-				type="image/webp">
-	<link rel="shortcut icon"
-				href="img/favicons/favicon.png"
-				type="image/x-icon">
+				content="fitness tracker, sport, clock, watch, fitness">
 	<link rel="stylesheet"
-				href="css/libs.min.css">
+		  		href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 	<link rel="stylesheet"
 				href="css/style.min.css">
 	<title>Fitness Tracker</title>
 </head>
 
+
 <body>
-	<header class="header">
-        <div class="container">
-            <div class="header__row">
+<header class="header">
+    <div class="container">
+        <div class="header__row">
+            <a href="/" class="logo-link">
                 <img src="./img/header/header-logo.svg" alt="logotype" class="header__logo">
-                <div class="header__menu">
-                    <ul class="header__list">
-                        <li class="header__list-item">
-                            <a href="#" class="header__link">f</a>
-                        </li>
-                        <li class="header__list-item">
-                            <a href="#" class="header__link">in</a>
-                        </li>
-                        <li class="header__list-item">
-                            <a href="#" class="header__link">G</a>
-                        </li>
-                    </ul>
-                    <div class="burger">
-                        <img src="./img/header/burger-ellipse.svg" alt="burger ellipse" class="burger__img">
-                        <div class="burger__line"></div>
-                        <div class="burger__line"></div>
-                        <div class="burger__line"></div>
-                    </div>
+            </a>
+            <div class="header__menu">
+                <ul class="header__list">
+                    <li class="header__list-item">
+                        <a href="#" class="header__link">f</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#" class="header__link">in</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#" class="header__link">G</a>
+                    </li>
+                </ul>
+                <div class="burger">
+                    <img src="./img/header/burger-ellipse.svg" alt="burger ellipse" class="burger__img">
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
                 </div>
-                
-                <nav class="navigation">
-                    <ul class="navigation__list">
-                        <li class="navigation__list-item">
-                            <a href="#" class="navigation__link">About text</a>
-                        </li>
-                        <li class="navigation__list-item">
-                            <a href="#" class="navigation__link">Start training</a>
-                        </li>
-                        <li class="navigation__list-item">
-                            <a href="#" class="navigation__link">Stories</a>
-                        </li>
-                        <li class="navigation__list-item">
-                            <a href="#" class="navigation__link">Tarif plan</a>
-                        </li>
-                        <li class="navigation__list-item">
-                            <a href="#" class="navigation__link">Authorization</a>
-                        </li>
-                    </ul>
-                </nav>
+            </div>
+            
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__list-item">
+                        <a href="#about" class="navigation__link">About text</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="#start" class="navigation__link">Start training</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="#stories" class="navigation__link">Stories</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="#tarif-plan" class="navigation__link">Tarif plan</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="#authorization" class="navigation__link">Authorization</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<main class="main">
+<section class="tracker">
+    <div class="container">
+        <div class="tracker__content">
+            <h1 class="title tracker__title" data-animation="slideInUp" data-animation-delay="600ms">The best fitness tracker!</h1>
+            <p class="text tracker__text" data-animation="slideInUp" data-animation-delay="1000ms">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. Ut et esse cupidatat consequat ea exercitation.</p>
+            <div class="btn-container tracker__btn-container">
+                <button class="btn tracker__btn ios-black">Download</button>
+                <button class="btn tracker__btn android-black">Download</button>
             </div>
         </div>
-    </header>
-	<main class="main">
+    </div>
+</section>
+<section class="about" id="about">
+    <div class="container">
+        <h3 class="title about__title"  data-animation="slideInUp" data-animation-delay="400ms">About text</h3>
+        <p class="text about__text" data-animation="slideInUp" data-animation-delay="600ms">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. Ut et esse cupidatat consequat.</p>
+    </div>
 
-		<section class="tracker">
-            <div class="container">
-                <div class="tracker__content">
-                    <h1 class="title tracker__title">The best fitness tracker!</h1>
-                    <p class="text tracker__text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. Ut et esse cupidatat consequat ea exercitation.</p>
-                    <div class="btn-container tracker__btn-container">
-                        <button class="btn tracker__btn ios-black">Download</button>
-                        <button class="btn tracker__btn android-black">Download</button>
-                    </div>
-                </div>
+    <div class="swiper slider">
+
+        <div class="swiper-wrapper">
+
+          <div class="slider__item swiper-slide">
+            <div class="slider__item-top">
+                <img src="./img/about/item-content.png" alt="content" class="slider__item-img">
+                <p class="slider__item-descr">Nisi ullamco tempor tempor nulla.</p>
             </div>
-        </section>
+            <p class="text slider__item-text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. </p>
+            </div>
+            <div class="slider__item swiper-slide">
+                <div class="slider__item-top">
+                    <img src="./img/about/item-content.png" alt="content" class="slider__item-img">
+                    <p class="slider__item-descr">Nisi ullamco tempor tempor nulla.</p>
+                </div>
+                <p class="text slider__item-text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. </p>
+            </div>
+            <div class="slider__item swiper-slide">
+                <div class="slider__item-top">
+                    <img src="./img/about/item-content.png" alt="content" class="slider__item-img">
+                    <p class="slider__item-descr">Nisi ullamco tempor tempor nulla.</p>
+                </div>
+                <p class="text slider__item-text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. </p>
+            </div>
+            <div class="slider__item swiper-slide">
+                <div class="slider__item-top">
+                    <img src="./img/about/item-content.png" alt="content" class="slider__item-img">
+                    <p class="slider__item-descr">Nisi ullamco tempor tempor nulla.</p>
+                </div>
+                <p class="text slider__item-text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. </p>
+            </div>
+            <div class="slider__item swiper-slide">
+                <div class="slider__item-top">
+                    <img src="./img/about/item-content.png" alt="content" class="slider__item-img">
+                    <p class="slider__item-descr">Nisi ullamco tempor tempor nulla.</p>
+                </div>
+                <p class="text slider__item-text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. </p>
+            </div>
+            <div class="slider__item swiper-slide">
+                <div class="slider__item-top">
+                    <img src="./img/about/item-content.png" alt="content" class="slider__item-img">
+                    <p class="slider__item-descr">Nisi ullamco tempor tempor nulla.</p>
+                </div>
+                <p class="text slider__item-text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. </p>
+            </div>
+            <div class="slider__item swiper-slide">
+                <div class="slider__item-top">
+                    <img src="./img/about/item-content.png" alt="content" class="slider__item-img">
+                    <p class="slider__item-descr">Nisi ullamco tempor tempor nulla.</p>
+                </div>
+                <p class="text slider__item-text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. </p>
+            </div>
+            <div class="slider__item swiper-slide">
+                <div class="slider__item-top">
+                    <img src="./img/about/item-content.png" alt="content" class="slider__item-img">
+                    <p class="slider__item-descr">Nisi ullamco tempor tempor nulla.</p>
+                </div>
+                <p class="text slider__item-text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. </p>
+            </div>
+            <div class="slider__item swiper-slide">
+                <div class="slider__item-top">
+                    <img src="./img/about/item-content.png" alt="content" class="slider__item-img">
+                    <p class="slider__item-descr">Nisi ullamco tempor tempor nulla.</p>
+                </div>
+                <p class="text slider__item-text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. </p>
+            </div>
+            <div class="slider__item swiper-slide">
+                <div class="slider__item-top">
+                    <img src="./img/about/item-content.png" alt="content" class="slider__item-img">
+                    <p class="slider__item-descr">Nisi ullamco tempor tempor nulla.</p>
+                </div>
+                <p class="text slider__item-text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. </p>
+            </div>
+            <div class="slider__item swiper-slide">
+                <div class="slider__item-top">
+                    <img src="./img/about/item-content.png" alt="content" class="slider__item-img">
+                    <p class="slider__item-descr">Nisi ullamco tempor tempor nulla.</p>
+                </div>
+                <p class="text slider__item-text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. </p>
+            </div>
+            <div class="slider__item swiper-slide">
+                <div class="slider__item-top">
+                    <img src="./img/about/item-content.png" alt="content" class="slider__item-img">
+                    <p class="slider__item-descr">Nisi ullamco tempor tempor nulla.</p>
+                </div>
+                <p class="text slider__item-text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. </p>
+            </div>
+            <div class="slider__item swiper-slide">
+                <div class="slider__item-top">
+                    <img src="./img/about/item-content.png" alt="content" class="slider__item-img">
+                    <p class="slider__item-descr">Nisi ullamco tempor tempor nulla.</p>
+                </div>
+                <p class="text slider__item-text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. </p>
+            </div>
+
+    </div>
         
-		<section class="about">
-            <div class="container">
-                <h3 class="title about__title">About text</h3>
-                <p class="text about__text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. Ut et esse cupidatat consequat.</p>
+    <div class="swiper-pagination"></div>
+      
+    </div>
+</section>
+<section class="start" id='start'>
+    <div class="container">
+        <div class="start__row">
+            <div class="start__content" data-animation="slideInRight" data-animation-delay="600ms">
+                <h3 class="title start__title">Start training already on your watch</h3>
+                <p class="text start__text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. Ut et esse cupidatat consequat. Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. Ut et esse cupidatat consequat.</p>
+                <form class="start__form">
+                    <input type="email" placeholder="Email" class="input start__input">
+                    <button type="submit" class="btn start__btn">Lets go</button>
+                </form>
             </div>
-            <div class="slider about__slider">
-                <div class="right">right</div>
-                <div class="left">left</div>
-                <div class="slider__display">
-                    <div class="slider__row">
-
-                        <div class="slider__item">
-                            <div class="slider__item-top">
-                                <img src="./img/about/item-content.png" alt="content" class="slider__item-img">
-                                <p class="slider__item-descr">Nisi ullamco tempor tempor nulla.</p>
-                            </div>
-                            <p class="text slider__item-text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. </p>
-                        </div>
-
-                        <div class="slider__item">
-                            <div class="slider__item-top">
-                                <img src="./img/about/item-content.png" alt="content" class="slider__item-img">
-                                <p class="slider__item-descr">Nisi ullamco tempor tempor nulla.</p>
-                            </div>
-                            <p class="text slider__item-text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. </p>
-                        </div>
-
-                        <div class="slider__item">
-                            <div class="slider__item-top">
-                                <img src="./img/about/item-content.png" alt="content" class="slider__item-img">
-                                <p class="slider__item-descr">Nisi ullamco tempor tempor nulla.</p>
-                            </div>
-                            <p class="text slider__item-text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. </p>
-                        </div>
-
-                        <div class="slider__item">
-                            <div class="slider__item-top">
-                                <img src="./img/about/item-content.png" alt="content" class="slider__item-img">
-                                <p class="slider__item-descr">Nisi ullamco tempor tempor nulla.</p>
-                            </div>
-                            <p class="text slider__item-text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. </p>
-                        </div>
-
-                        <div class="slider__item">
-                            <div class="slider__item-top">
-                                <img src="./img/about/item-content.png" alt="content" class="slider__item-img">
-                                <p class="slider__item-descr">Nisi ullamco tempor tempor nulla.</p>
-                            </div>
-                            <p class="text slider__item-text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. </p>
-                        </div>
-
-                        <div class="slider__item">
-                            <div class="slider__item-top">
-                                <img src="./img/about/item-content.png" alt="content" class="slider__item-img">
-                                <p class="slider__item-descr">Nisi ullamco tempor tempor nulla.</p>
-                            </div>
-                            <p class="text slider__item-text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. </p>
-                        </div>
-
-                        <div class="slider__item">
-                            <div class="slider__item-top">
-                                <img src="./img/about/item-content.png" alt="content" class="slider__item-img">
-                                <p class="slider__item-descr">Nisi ullamco tempor tempor nulla.</p>
-                            </div>
-                            <p class="text slider__item-text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. </p>
-                        </div>
-
-                        <div class="slider__item">
-                            <div class="slider__item-top">
-                                <img src="./img/about/item-content.png" alt="content" class="slider__item-img">
-                                <p class="slider__item-descr">Nisi ullamco tempor tempor nulla.</p>
-                            </div>
-                            <p class="text slider__item-text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. </p>
-                        </div>
-
-                        <div class="slider__item">
-                            <div class="slider__item-top">
-                                <img src="./img/about/item-content.png" alt="content" class="slider__item-img">
-                                <p class="slider__item-descr">Nisi ullamco tempor tempor nulla.</p>
-                            </div>
-                            <p class="text slider__item-text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. </p>
-                        </div>
-
-                        <div class="slider__item">
-                            <div class="slider__item-top">
-                                <img src="./img/about/item-content.png" alt="content" class="slider__item-img">
-                                <p class="slider__item-descr">Nisi ullamco tempor tempor nulla.</p>
-                            </div>
-                            <p class="text slider__item-text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. </p>
-                        </div>
-
-                        <div class="slider__item">
-                            <div class="slider__item-top">
-                                <img src="./img/about/item-content.png" alt="content" class="slider__item-img">
-                                <p class="slider__item-descr">Nisi ullamco tempor tempor nulla.</p>
-                            </div>
-                            <p class="text slider__item-text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. </p>
-                        </div>
-
-                        <div class="slider__item">
-                            <div class="slider__item-top">
-                                <img src="./img/about/item-content.png" alt="content" class="slider__item-img">
-                                <p class="slider__item-descr">Nisi ullamco tempor tempor nulla.</p>
-                            </div>
-                            <p class="text slider__item-text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. </p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="slider__dots">
-                    <div class="slider__dots-row">
-                        <div class="slider__dot slider__dot--active"></div>
-                        <div class="slider__dot"></div>
-                        <div class="slider__dot"></div>
-                        <div class="slider__dot"></div>
-                        <div class="slider__dot"></div>
-                        <div class="slider__dot"></div>
-                    </div>
-                </div>
-
+            <img class="start__img" src="./img/start/clock.png" alt="clock" data-animation="slideInLeft" data-animation-delay="1000ms">
+        </div>
+    </div>
+</section>
+<section class="stories" id="stories">
+    <div class="container">
+        <h3 class="title stories__title" data-animation="slideInUp" data-animation-delay="600ms">Stories of our users</h3>
+        <div class="stories__items">
+            <div class="stories__item" data-animation="slideInUp" data-animation-delay="400ms">
+                <img src="./img/stories/1.png" alt="story" class="stories__item-img">
+                <h5 class="stories__item-name">Stories of our users</h5>
+                <p class="text stories__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <span class="stories__item-date">17.10.20</span>
             </div>
-        </section>
-
-		<section class="start">
-            <div class="container">
-                <div class="start__row">
-                    <div class="start__content">
-                        <h3 class="title start__title">Start training already on your watch</h3>
-                        <p class="text start__text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. Ut et esse cupidatat consequat. Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. Ut et esse cupidatat consequat.</p>
-                        <form class="start__form">
-                            <input type="email" placeholder="Email" class="input start__input">
-                            <button type="submit" class="btn start__btn">Lets go</button>
-                        </form>
-                    </div>
-                    <img src="./img/start/clock.png" alt="clock" class="start__img">
+            <div class="stories__item" data-animation="slideInUp" data-animation-delay="700ms">
+                <img src="./img/stories/2.png" alt="story" class="stories__item-img">
+                <h5 class="stories__item-name">Stories of our users</h5>
+                <p class="text stories__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <span class="stories__item-date">17.10.20</span>
+            </div>
+            <div class="stories__item" data-animation="slideInUp" data-animation-delay="1000ms">
+                <img src="./img/stories/1.png" alt="story" class="stories__item-img">
+                <h5 class="stories__item-name">Stories of our users</h5>
+                <p class="text stories__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <span class="stories__item-date">17.10.20</span>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="tarif-plan" id="tarif-plan">
+    <div class="container">
+        <span class="tarif-plan__descr" data-animation="slideInUp" data-animation-delay="600ms">We have selected the best payment solutions for you.</span>
+        <h3 class="title tarif-plan__title" data-animation="slideInUp" data-animation-delay="900ms">Choose your tariff plan</h3>
+        <ul class="tarif-plan__category-list">
+            <li class="tarif-plan__category-list-item">Month</li>
+            <li class="tarif-plan__category-list-item">Years</li>
+        </ul>
+        <div class="tarif-plan__items">
+            <div class="tarif-plan__months">
+                <div class="tarif-plan__item">
+                    <span class="tarif-plan__item-category">Free Plan</span>
+                    <h5 class="tarif-plan__duration">$0 mounth</h5>
+                    <ul class="tarif-plan__characteristic-list">
+                        <li class="tarif-plan__characteristic-item">5 Email</li>
+                        <li class="tarif-plan__characteristic-item">Free Share</li>
+                        <li class="tarif-plan__characteristic-item">200 Clients</li>
+                        <li class="tarif-plan__characteristic-item">Chat support</li>
+                    </ul>
+                    <button class="btn tarif-plan__btn">Get started</button>
+                </div>
+                <div class="tarif-plan__item">
+                    <span class="tarif-plan__item-category">Basic</span>
+                    <h5 class="tarif-plan__duration">$5 mounth</h5>
+                    <ul class="tarif-plan__characteristic-list">
+                        <li class="tarif-plan__characteristic-item">200 Email</li>
+                        <li class="tarif-plan__characteristic-item">Free Share</li>
+                        <li class="tarif-plan__characteristic-item">500 Clients</li>
+                        <li class="tarif-plan__characteristic-item">Chat + Email support</li>
+                    </ul>
+                    <button class="btn tarif-plan__btn">Get started</button>
+                </div>
+                <div class="tarif-plan__item">
+                    <span class="tarif-plan__item-category">Advenced</span>
+                    <h5 class="tarif-plan__duration">$9 mounth</h5>
+                    <ul class="tarif-plan__characteristic-list">
+                        <li class="tarif-plan__characteristic-item">2 000 Email</li>
+                        <li class="tarif-plan__characteristic-item">Free Share</li>
+                        <li class="tarif-plan__characteristic-item">1 000 Clients</li>
+                        <li class="tarif-plan__characteristic-item">Chat + Email support</li>
+                    </ul>
+                    <button class="btn tarif-plan__btn">Get started</button>
+                </div>
+                <div class="tarif-plan__item">
+                    <span class="tarif-plan__item-category">Most Advanced</span>
+                    <h5 class="tarif-plan__duration">$12 mounth</h5>
+                    <ul class="tarif-plan__characteristic-list">
+                        <li class="tarif-plan__characteristic-item">Unlim Email</li>
+                        <li class="tarif-plan__characteristic-item">Free Share</li>
+                        <li class="tarif-plan__characteristic-item">10 000 Clients</li>
+                        <li class="tarif-plan__characteristic-item"></li>
+                    </ul>
+                    <button class="btn tarif-plan__btn">Get started</button>
                 </div>
             </div>
-        </section>
-
-		<section class="stories">
-            <div class="container">
-                <h3 class="title stories__title">Stories of our users</h3>
-                <div class="stories__items">
-                    <div class="stories__item">
-                        <img src="./img/stories/1.png" alt="story" class="stories__item-img">
-                        <h5 class="stories__item-name">Stories of our users</h5>
-                        <p class="text stories__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                        <span class="stories__item-date">17.10.20</span>
-                    </div>
-                    <div class="stories__item">
-                        <img src="./img/stories/2.png" alt="story" class="stories__item-img">
-                        <h5 class="stories__item-name">Stories of our users</h5>
-                        <p class="text stories__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                        <span class="stories__item-date">17.10.20</span>
-                    </div>
-                    <div class="stories__item">
-                        <img src="./img/stories/1.png" alt="story" class="stories__item-img">
-                        <h5 class="stories__item-name">Stories of our users</h5>
-                        <p class="text stories__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                        <span class="stories__item-date">17.10.20</span>
-                    </div>
+            <div class="tarif-plan__year">
+                <div class="tarif-plan__item">
+                    <span class="tarif-plan__item-category">Basic</span>
+                    <h5 class="tarif-plan__duration">$50 year</h5>
+                    <ul class="tarif-plan__characteristic-list">
+                        <li class="tarif-plan__characteristic-item">3000 Email</li>
+                        <li class="tarif-plan__characteristic-item">Free Share</li>
+                        <li class="tarif-plan__characteristic-item">7000 Clients</li>
+                        <li class="tarif-plan__characteristic-item">Chat + Email support</li>
+                    </ul>
+                    <button class="btn tarif-plan__btn">Get started</button>
                 </div>
-            </div>
-        </section>
-
-		<section class="tarif-plan">
-            <div class="container">
-                <span class="tarif-plan__descr">We have selected the best payment solutions for you.</span>
-                <h3 class="title tarif-plan__title">Choose your tariff plan</h3>
-                <ul class="tarif-plan__category-list">
-                    <li class="tarif-plan__category-list-item">Month</li>
-                    <li class="tarif-plan__category-list-item">Years</li>
-                </ul>
-                <div class="tarif-plan__items">
-                    <div class="tarif-plan__months">
-                        <div class="tarif-plan__item">
-                            <span class="tarif-plan__item-category">Free Plan</span>
-                            <h5 class="tarif-plan__duration">$0 mounth</h5>
-                            <ul class="tarif-plan__characteristic-list">
-                                <li class="tarif-plan__characteristic-item">5 Email</li>
-                                <li class="tarif-plan__characteristic-item">Free Share</li>
-                                <li class="tarif-plan__characteristic-item">200 Clients</li>
-                                <li class="tarif-plan__characteristic-item">Chat support</li>
-                            </ul>
-                            <button class="btn tarif-plan__btn">Get started</button>
-                        </div>
-                        <div class="tarif-plan__item">
-                            <span class="tarif-plan__item-category">Basic</span>
-                            <h5 class="tarif-plan__duration">$5 mounth</h5>
-                            <ul class="tarif-plan__characteristic-list">
-                                <li class="tarif-plan__characteristic-item">200 Email</li>
-                                <li class="tarif-plan__characteristic-item">Free Share</li>
-                                <li class="tarif-plan__characteristic-item">500 Clients</li>
-                                <li class="tarif-plan__characteristic-item">Chat + Email support</li>
-                            </ul>
-                            <button class="btn tarif-plan__btn">Get started</button>
-                        </div>
-                        <div class="tarif-plan__item">
-                            <span class="tarif-plan__item-category">Advenced</span>
-                            <h5 class="tarif-plan__duration">$9 mounth</h5>
-                            <ul class="tarif-plan__characteristic-list">
-                                <li class="tarif-plan__characteristic-item">2 000 Email</li>
-                                <li class="tarif-plan__characteristic-item">Free Share</li>
-                                <li class="tarif-plan__characteristic-item">1 000 Clients</li>
-                                <li class="tarif-plan__characteristic-item">Chat + Email support</li>
-                            </ul>
-                            <button class="btn tarif-plan__btn">Get started</button>
-                        </div>
-                        <div class="tarif-plan__item">
-                            <span class="tarif-plan__item-category">Most Advanced</span>
-                            <h5 class="tarif-plan__duration">$12 mounth</h5>
-                            <ul class="tarif-plan__characteristic-list">
-                                <li class="tarif-plan__characteristic-item">Unlim Email</li>
-                                <li class="tarif-plan__characteristic-item">Free Share</li>
-                                <li class="tarif-plan__characteristic-item">10 000 Clients</li>
-                                <li class="tarif-plan__characteristic-item"></li>
-                            </ul>
-                            <button class="btn tarif-plan__btn">Get started</button>
-                        </div>
-                    </div>
-                    <div class="tarif-plan__year">
-                        <div class="tarif-plan__item">
-                            <span class="tarif-plan__item-category">Basic</span>
-                            <h5 class="tarif-plan__duration">$50 year</h5>
-                            <ul class="tarif-plan__characteristic-list">
-                                <li class="tarif-plan__characteristic-item">3000 Email</li>
-                                <li class="tarif-plan__characteristic-item">Free Share</li>
-                                <li class="tarif-plan__characteristic-item">7000 Clients</li>
-                                <li class="tarif-plan__characteristic-item">Chat + Email support</li>
-                            </ul>
-                            <button class="btn tarif-plan__btn">Get started</button>
-                        </div>
-                        <div class="tarif-plan__item">
-                            <span class="tarif-plan__item-category">Advenced</span>
-                            <h5 class="tarif-plan__duration">100$ year</h5>
-                            <ul class="tarif-plan__characteristic-list">
-                                <li class="tarif-plan__characteristic-item">30 000 Email</li>
-                                <li class="tarif-plan__characteristic-item">free Share</li>
-                                <li class="tarif-plan__characteristic-item">15 000 Clients</li>
-                                <li class="tarif-plan__characteristic-item">Chat + Email support</li>
-                            </ul>
-                            <button class="btn tarif-plan__btn">Get started</button>
-                        </div>
-                        <div class="tarif-plan__item">
-                            <span class="tarif-plan__item-category">Most Advanced</span>
-                            <h5 class="tarif-plan__duration">150$ year</h5>
-                            <ul class="tarif-plan__characteristic-list">
-                                <li class="tarif-plan__characteristic-item">Unlim Email</li>
-                                <li class="tarif-plan__characteristic-item">Free Share</li>
-                                <li class="tarif-plan__characteristic-item">150 000 Clients</li>
-                                <li class="tarif-plan__characteristic-item">Personal Manager</li>
-                            </ul>
-                            <button class="btn tarif-plan__btn">Get started</button>
-                        </div>
-                        <div class="tarif-plan__item">
-                            <span class="tarif-plan__item-category">Exclusive</span>
-                            <h5 class="tarif-plan__duration">250$ year</h5>
-                            <ul class="tarif-plan__characteristic-list">
-                                <li class="tarif-plan__characteristic-item">Unlim Email</li>
-                                <li class="tarif-plan__characteristic-item">Free share</li>
-                                <li class="tarif-plan__characteristic-item">Unlim Clients</li>
-                                <li class="tarif-plan__characteristic-item">Best Personal Manager</li>
-                            </ul>
-                            <button class="btn tarif-plan__btn">Get started</button>
-                        </div>
-                    </div>
+                <div class="tarif-plan__item">
+                    <span class="tarif-plan__item-category">Advenced</span>
+                    <h5 class="tarif-plan__duration">100$ year</h5>
+                    <ul class="tarif-plan__characteristic-list">
+                        <li class="tarif-plan__characteristic-item">30 000 Email</li>
+                        <li class="tarif-plan__characteristic-item">free Share</li>
+                        <li class="tarif-plan__characteristic-item">15 000 Clients</li>
+                        <li class="tarif-plan__characteristic-item">Chat + Email support</li>
+                    </ul>
+                    <button class="btn tarif-plan__btn">Get started</button>
                 </div>
-            </div>
-        </section>
-
-		<section class="authorization">
-            <div class="container">
-                <div class="authorization__row">
-                    <div class="authorization__content">
-                        <h3 class="title authorization__title">Download now and get a bonus!</h3>
-                        <p class="text authorization__text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. Ut et esse cupidatat consequat ea exercitation.</p>
-                        <div class="container-btn authorization__container-btn">
-                            <button class="btn authorization__btn ios-white">Download</button>
-                            <button class="btn authorization__btn android-white">Download</button>
-                        </div>
-                    </div>
-                    <form class="authorization__form">
-                        <ul class="authorization__list">
-                            <li class="authorization__list-item authorization__list-item--active">Sign in</li>
-                            <li class="authorization__list-item">Log in</li>
-                        </ul>
-                        <div class="authorization__items">
-                            <div class="authorization__item">
-                                <input type="text" placeholder="Your name" class="input authorization__form-input">
-                                <input type="email" placeholder="Email" class="input authorization__form-input">
-                                <input type="text" placeholder="Company" class="input authorization__form-input">
-                                <input type="text" placeholder="Password" class="input authorization__form-input">
-                                <label class="authorization__label">
-                                    <input type="checkbox" class="authorization__form-input">
-                                    <span class="authorization__label-text">Lorem ipsum dolor sit amet.</span>
-                                </label>
-                                <button class="btn authorization__button" data-type="sign-in">Sign in</button>
-                            </div>
-                            <div class="authorization__item" style="display: none;">
-                                <input type="email" placeholder="Email" class="input authorization__form-input">
-                                <input type="text" placeholder="Password" class="input authorization__form-input">
-                                <input type="checkbox" class="authorization__form-input">
-                                <label class="authorization__label">
-                                    Lorem ipsum dolor sit amet.
-                                </label>
-                                <button class="btn authorization__button" data-type="log-in">Log in</button>
-                            </div>
-                        </div>
-                    </form>
+                <div class="tarif-plan__item">
+                    <span class="tarif-plan__item-category">Most Advanced</span>
+                    <h5 class="tarif-plan__duration">150$ year</h5>
+                    <ul class="tarif-plan__characteristic-list">
+                        <li class="tarif-plan__characteristic-item">Unlim Email</li>
+                        <li class="tarif-plan__characteristic-item">Free Share</li>
+                        <li class="tarif-plan__characteristic-item">150 000 Clients</li>
+                        <li class="tarif-plan__characteristic-item">Personal Manager</li>
+                    </ul>
+                    <button class="btn tarif-plan__btn">Get started</button>
                 </div>
-            </div>
-        </section>
-	</main>
-	<footer class="footer">
-        <div class="container">
-            <div class="footer__row">
-                <img src="./img/header/header-logo.svg" alt="logotype" class="footer__logo">
-                <ul class="footer__list">
-                    <li class="footer__list-item">
-                        <a href="#" class="footer__link">About</a>
-                    </li>
-                    <li class="footer__list-item">
-                        <a href="#" class="footer__link">Pricing</a>
-                    </li>
-                    <li class="footer__list-item">
-                        <a href="#" class="footer__link">Manual</a>
-                    </li>
-                </ul>
-                <div class="btn-container footer__btn-container">
-                    <button class="btn footer__btn ios-white">Download</button>
-                    <button class="btn footer__btn android-white">Download</button>
+                <div class="tarif-plan__item">
+                    <span class="tarif-plan__item-category">Exclusive</span>
+                    <h5 class="tarif-plan__duration">250$ year</h5>
+                    <ul class="tarif-plan__characteristic-list">
+                        <li class="tarif-plan__characteristic-item">Unlim Email</li>
+                        <li class="tarif-plan__characteristic-item">Free share</li>
+                        <li class="tarif-plan__characteristic-item">Unlim Clients</li>
+                        <li class="tarif-plan__characteristic-item">Best Personal Manager</li>
+                    </ul>
+                    <button class="btn tarif-plan__btn">Get started</button>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</section>
+<section class="authorization" id="authorization">
+    <div class="container">
+        <div class="authorization__row">
+            <div class="authorization__content" data-animation="slideInRight" data-animation-delay="1000ms">
+                <h3 class="title authorization__title">Download now and get a bonus!</h3>
+                <p class="text authorization__text">Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. Ut et esse cupidatat consequat ea exercitation.</p>
+                <div class="container-btn authorization__container-btn">
+                    <button class="btn authorization__btn ios-white">Download</button>
+                    <button class="btn authorization__btn android-white">Download</button>
+                </div>
+            </div>
+            <form class="authorization__form" data-animation="slideInUp" data-animation-delay="600ms">
+                <ul class="authorization__list">
+                    <li class="authorization__list-item authorization__list-item--active">Sign in</li>
+                    <li class="authorization__list-item">Log in</li>
+                </ul>
+                <div class="authorization__items">
+                    <div class="authorization__item">
+                        <input type="text" placeholder="Your name" class="input authorization__form-input">
+                        <input type="email" placeholder="Email" class="input authorization__form-input">
+                        <input type="text" placeholder="Company" class="input authorization__form-input">
+                        <input type="text" placeholder="Password" class="input authorization__form-input">
+                        <label class="authorization__label">
+                            <input type="checkbox" class="authorization__form-input">
+                            <span class="authorization__label-text">Lorem ipsum dolor sit amet.</span>
+                        </label>
+                        <button class="btn authorization__button" data-type="sign-in">Sign in</button>
+                    </div>
+                    <div class="authorization__item">
+                        <input type="email" placeholder="Email" class="input authorization__form-input">
+                        <input type="text" placeholder="Password" class="input authorization__form-input">
+                        <input type="checkbox" class="authorization__form-input">
+                        <label class="authorization__label">
+                            Lorem ipsum dolor sit amet.
+                        </label>
+                        <button class="btn authorization__button" data-type="log-in">Log in</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__row">
+            <a href="/" class="logo-link">
+                <img src="./img/header/header-logo.svg" alt="logotype" class="footer__logo">
+            </a>
+            <ul class="footer__list">
+                <li class="footer__list-item">
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#stories" class="footer__link">Stories</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#tarif-plan" class="footer__link">Pricing</a>
+                </li>
+            </ul>
+            <div class="btn-container footer__btn-container">
+                <button class="btn footer__btn ios-white">Download</button>
+                <button class="btn footer__btn android-white">Download</button>
+            </div>
+        </div>
+    </div>
+</footer>
 
-	<script src="js/libs.min.js"></script>
-    <script src="js/main.min.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="js/main.min.js"></script>
 
 </body>
 </html>
